@@ -23,6 +23,7 @@ export function NavbarMain() {
                 <Image src="/bluelog.jpg" alt="Logo" width={40} height={40}/>
             </a>
             <h1 className="text-2xl"> Track Your Coding Practice </h1>
+            <a href="/login" className="ml-auto"> Login </a>
         </INavbar>
     );
 }
@@ -33,7 +34,7 @@ export function MySpaceNavbar() {
             <a href="/" className="p-4"> 
                 <Image src="/bluelog.jpg" alt="Logo" width={40} height={40}/>
             </a>
-            <div className="ml-auto"> Login </div>
+            <a href="/login" className="ml-auto"> Logout </a>
         </INavbar>
     );
 }

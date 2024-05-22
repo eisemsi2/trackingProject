@@ -55,8 +55,8 @@ export function SideBarLeft() {
 
 export function SideBarRight() {
     return (
-        <div className="hidden ml-auto md:flex flex-col shadow-2xl h-screen w-1/12 rounded-sm bg-black/30">
-            
+        <div className="hidden ml-auto md:flex flex-col shadow-2xl h-screen w-1/12 rounded-sm bg-black/30 justify-center">
+            <span className='p-2'> PAGE DISCRIPTION </span>
         </div>       
     );
 }

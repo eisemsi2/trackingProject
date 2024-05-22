@@ -1,8 +1,11 @@
+import { SideBarLeft } from "../ui/sidebars";
+import { SideBarRight } from "../ui/sidebars";
+
 export default function MySpace() {
     return (
-        <div className="px-4">
-
-            Welcome to Your Space!
+        <div className="flex flex-row">
+            <SideBarLeft />
+            <SideBarRight />
 
         </div>
 

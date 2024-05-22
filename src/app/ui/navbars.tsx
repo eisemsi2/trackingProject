@@ -8,7 +8,7 @@ export function INavbar({children}: Readonly<{children: React.ReactNode;}>) {
         //     </a>
         //     <div className="ml-auto"> Login </div>
         // </nav>
-        <nav className="flex flex-row h-14 items-center justify-center rounded shadow-md mb-8 px-4">
+        <nav className="flex flex-row h-14 items-center justify-center rounded shadow-md px-4">
             {children}
         </nav>
 

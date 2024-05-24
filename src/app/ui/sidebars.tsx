@@ -1,13 +1,13 @@
 'use client';
 import Image from 'next/image';
-import { useState } from 'react';
+import { SideBarLeftProps } from './types';
 
-export function SideBarLeft() {
+export function SideBarLeft({isOpen, handleToggle}: SideBarLeftProps) {
     
-    const [isOpen, setIsOpen] = useState(true);
-    function handleToggle() {
-        setIsOpen((prevOpen) => !prevOpen);
-    } 
+    // const [isOpen, setIsOpen] = useState(true);
+    // function handleToggle() {
+    //     setIsOpen((prevOpen) => !prevOpen);
+    // } 
 
     return (
         <div className={`md:w-36 w-36 flex flex-row 

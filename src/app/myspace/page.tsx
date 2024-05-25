@@ -14,7 +14,6 @@ export default function MySpace() {
     return (
         <div className="flex flex-row">
             <SideBarLeft isOpen={isOpen} handleToggle={handleToggle}/>
-            <SideBarRight />
             
             <div className={`${isOpen ? 'translate-x-0' : '-translate-x-[124px]'} m-4 transition-transform duration-1000`}> 
                 grids to be placed here <br />
@@ -25,6 +24,8 @@ export default function MySpace() {
                 to add a feature to pin items <br />
                 to add a feature to add blog posts.
             </div>
+
+            <SideBarRight />
 
         </div>
 

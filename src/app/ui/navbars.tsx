@@ -35,7 +35,11 @@ export function MySpaceNavbar() {
             <Link href="/" className="p-4"> 
                 <Image src="/bluelog.jpg" alt="Logo" width={40} height={40}/>
             </Link>
-            <Link href="/login" className="ml-auto"> Logout </Link>
+            <div className="ml-auto">
+                <button className="mr-4"> Add Platform </button>
+                <Link href="/blog" className="mr-4"> Create Blog </Link>
+                <Link href="/"> Logout </Link>
+            </div>
         </INavbar>
     );
 }

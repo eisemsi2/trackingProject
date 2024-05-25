@@ -8,7 +8,7 @@ export function GridElement({color = 'white'}: {color?: string}) {
         <div className={
             `md:h-4 md:w-4 bg-${color}
             md:border-2 border-gray-200
-            h-[10px] w-[10px] border 
+            h-[10px] w-[10px] border flex-initial 
         `}>
         </div>
     );
@@ -55,7 +55,7 @@ export default function Grid() {
             <div className="hidden md:grid grid-rows-7 grid-flow-col gap-0 md:w-[56rem] w-[30rem]"> 
                 {gridmd}
             </div>
-            <div className="grid md:hidden grid-rows-7 grid-flow-col gap-0 md:w-[56rem] w-[17rem]"> 
+            <div className="grid md:hidden grid-rows-7 grid-flow-col gap-0 md:w-[56rem] w-[10rem] flex-wrap"> 
                 {grid}
             </div>
         </div>

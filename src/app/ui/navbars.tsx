@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function INavbar({children}: Readonly<{children: React.ReactNode;}>) {
     return (
@@ -19,9 +20,9 @@ export function INavbar({children}: Readonly<{children: React.ReactNode;}>) {
 export function NavbarMain() {
     return (
         <INavbar>
-            <a href="/" className="p-4"> 
+            <Link href="/" className="p-4"> 
                 <Image src="/bluelog.jpg" alt="Logo" width={40} height={40}/>
-            </a>
+            </Link>
             <h1 className="text-2xl"> Track Your Coding Practice </h1>
             <a href="/login" className="ml-auto"> Login </a>
         </INavbar>
@@ -31,10 +32,10 @@ export function NavbarMain() {
 export function MySpaceNavbar() {
     return (
         <INavbar>
-            <a href="/" className="p-4"> 
+            <Link href="/" className="p-4"> 
                 <Image src="/bluelog.jpg" alt="Logo" width={40} height={40}/>
-            </a>
-            <a href="/login" className="ml-auto"> Logout </a>
+            </Link>
+            <Link href="/login" className="ml-auto"> Logout </Link>
         </INavbar>
     );
 }

@@ -22,7 +22,8 @@ export default function MySpace() {
                 {/* <span className="font-bold">
                     to move this div left if the sidebarleft is closed
                 </span> --------- fixed */}
-
+                to add a feature to pin items <br />
+                to add a feature to add blog posts.
             </div>
 
         </div>

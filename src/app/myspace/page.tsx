@@ -5,6 +5,7 @@ import { SideBarLeft } from "../ui/sidebars";
 import { SideBarRight } from "../ui/sidebars";
 import { useState } from 'react';
 import  Grid  from "../ui/grid";
+import Blog from "../ui/blog";
 
 
 export default function MySpace() {
@@ -21,15 +22,16 @@ export default function MySpace() {
                 transition-all duration-1000 flex-grow text-center
                 `}
                 > 
-                grids to be placed here <br />
-                {/* to add a form to add new coding platform <br /> */}
-                {/* <span className="font-bold">
-                    to move this div left if the sidebarleft is closed
-                </span> --------- fixed */}
+                <h1 className="text-2xl text-start px-2"> Immediate Tasks: </h1>
+                each blog post has to redirect to the bog<br />
                 to add a feature to pin items. <br />
-                to add a button in navbar to add new coding platform. <br />
                 to make the create blog page
-
+                
+                <div className="flex flex-row flex-wrap justify-center">
+                    <Blog isOpen={isOpen} handleToggle={handleToggle}/>
+                    <Blog isOpen={isOpen} handleToggle={handleToggle}/>
+                    <Blog isOpen={isOpen} handleToggle={handleToggle}/>
+                </div>
 
                 <div className="md:hidden ml-[-60px]">
                     <Grid />

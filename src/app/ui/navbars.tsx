@@ -37,8 +37,21 @@ export function MySpaceNavbar() {
             </Link>
             <div className="ml-auto">
                 <button className="mr-4"> Add Platform </button>
-                <Link href="/blog" className="mr-4"> Create Blog </Link>
+                <Link href="/createblog" className="mr-4"> Create Blog </Link>
                 <Link href="/"> Logout </Link>
+            </div>
+        </INavbar>
+    );
+}
+
+export function BlogNavbar() {
+    return (
+        <INavbar>
+            <Link href="/" className="p-4"> 
+                <Image src="/bluelog.jpg" alt="Logo" width={40} height={40}/>
+            </Link>
+            <div className="ml-auto">
+                <Link href="/myspace" className="mr-4"> MySpace </Link>
             </div>
         </INavbar>
     );

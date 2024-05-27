@@ -18,7 +18,7 @@ export function SideBarLeft({isOpen, handleToggle}: SideBarLeftProps) {
         `}>
             <div className={`
                 flex flex-col shadow-lg 
-                h-screen rounded-sm
+                min-h-screen rounded-sm
                 md:w-[100%] w-[124px]
                 bg-blue-700 
                 border-r
@@ -55,7 +55,7 @@ export function SideBarLeft({isOpen, handleToggle}: SideBarLeftProps) {
 
 export function SideBarRight() {
     return (
-        <div className="hidden ml-auto md:flex flex-col shadow-2xl h-screen rounded-sm bg-black/30 justify-center">
+        <div className="hidden ml-auto lg:flex flex-col shadow-2xl h-screen rounded-sm bg-black/30 justify-center">
             <div className='p-2'> PAGE DISCRIPTION </div>
         </div>       
     );

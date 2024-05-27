@@ -18,10 +18,10 @@ export default function Grid() {
 
     const [color, setColor] = useState('green-900');
 
-    let gridmd: React.ReactNode[] = [];
+    let gridlg: React.ReactNode[] = [];
     let i=0;
     for (i=0; i<315; i++) {
-        gridmd.push(<GridElement key={i} color={color}/>);
+        gridlg.push(<GridElement key={i} color={color}/>);
     }
     let grid: React.ReactNode[] = [];
     i=0;
@@ -53,7 +53,7 @@ export default function Grid() {
                 {days}
             </div>
             <div className="hidden lg:grid grid-rows-7 grid-flow-col gap-0 lg:w-[702px] w-[30rem]"> 
-                {gridmd}
+                {gridlg}
             </div>
             <div className="grid lg:hidden grid-rows-7 grid-flow-col gap-0 lg:w-[56rem] w-[84px]"> 
                 {grid}

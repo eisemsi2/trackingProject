@@ -18,7 +18,7 @@ export default function MySpace() {
             <SideBarLeft isOpen={isOpen} handleToggle={handleToggle}/>
             
             <div className={`${isOpen ? 'ml-[4px]' : 'ml-[-120px]'} m-4
-                transition-all duration-1000 flex-grow
+                transition-all duration-1000 flex-grow text-center
                 `}
                 > 
                 grids to be placed here <br />
@@ -31,7 +31,10 @@ export default function MySpace() {
                 to make the create blog page
 
 
-                <div className="m-4 ">
+                <div className="md:hidden ml-[-60px]">
+                    <Grid />
+                </div>
+                <div className="hidden md:block">
                     <Grid />
                 </div>
             </div>

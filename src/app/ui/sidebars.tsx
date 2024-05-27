@@ -55,8 +55,8 @@ export function SideBarLeft({isOpen, handleToggle}: SideBarLeftProps) {
 
 export function SideBarRight() {
     return (
-        <div className="hidden ml-auto md:flex flex-col shadow-2xl h-screen w-1/12 rounded-sm bg-black/30 justify-center">
-            <span className='p-2'> PAGE DISCRIPTION </span>
+        <div className="hidden ml-auto md:flex flex-col shadow-2xl h-screen rounded-sm bg-black/30 justify-center">
+            <div className='p-2'> PAGE DISCRIPTION </div>
         </div>       
     );
 }
